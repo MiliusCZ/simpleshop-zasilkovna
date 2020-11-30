@@ -35,7 +35,7 @@ Hodnoty je třeba vyčíst ze zdrojového kódu stránky s formulářem (napří
 
 Nahraďte řetězec YOURAPIKEY v posledním řádku skriptu Vaším API klíčem, který najdete na portálu Zásilkovny
 
-```
+```html
 <script type="text/javascript">
     /* CONFIG PROPERTIES BEGIN */
     var inputName = 'payment[-::jIzui4tg::value]';
