@@ -13,6 +13,8 @@ Integrace výběru pobočky Zásilkovny do Simpleshop formuláře
 
 K produktu vytvořte položky doplňkového prodeje pro dopravu. Jedna z položek bude představovat dodání přes Zásilkovnu. 
 
+![Ukázka nastavení doplňkového prodeje](https://github.com/MiliusCZ/simpleshop-zasilkovna/blob/main/doplnkovy%20prodej.png?raw=true)
+
 ### Vytvoření políčka ve formuláři
 
 V záložce *Formulář* v úpravě produktu vytvořte nové pole typu *Jednořádkový text*. Název je libovolný - například **Výdejna zásilkovny**
