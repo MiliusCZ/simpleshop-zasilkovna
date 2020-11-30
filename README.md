@@ -28,10 +28,10 @@ V záložce *Formulář* v úpravě produktu vytvořte nové pole typu *Jednoř�
 Kód integrace vložte v úpravě produktu do záložky *Ostatní*, *pole JS, CSS a jiné kódy*. Před vložením je třeba v kódu upravit několik položek.
 Hodnoty je třeba vyčíst ze zdrojového kódu stránky s formulářem (například pomocí pravého kliku na pole a vybrání položky *prozkoumat*)
 
-*inputName* - název input elementu pole **Výdejna zásilkovny** 
-*inputName* - název hidden input elementu pole **Výdejna zásilkovny** 
-*transportSelectorName* - název atributu pro výběr doplňkového prodeje 
-*zasilkovnaValue* - pořadí zásilkovny v seznamu doplňkového prodeje. Počítá se od nuly, takže například bude-li Zásilkovna na druhém místě, hodnota je "1"
+- *inputName* - název input elementu pole **Výdejna zásilkovny** 
+- *inputName* - název hidden input elementu pole **Výdejna zásilkovny** 
+- *transportSelectorName* - název atributu pro výběr doplňkového prodeje 
+- *zasilkovnaValue* - pořadí zásilkovny v seznamu doplňkového prodeje. Počítá se od nuly, takže například bude-li Zásilkovna na druhém místě, hodnota je "1"
 
 Nahraďte řetězec YOURAPIKEY v posledním řádku skriptu Vaším API klíčem, který najdete na portálu Zásilkovny
 
