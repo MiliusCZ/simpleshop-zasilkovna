@@ -37,60 +37,61 @@ Nahraďte řetězec YOURAPIKEY v posledním řádku skriptu Vaším API klíčem
 
 ```
 <script type="text/javascript">
-/* CONFIG PROPERTIES BEGIN */
-var inputName = 'payment[-::jIzui4tg::value]';
-var hiddenFieldName = 'payment[-::jIzui4tg::name]';
-var transportSelectorName = 'payment[items::1::key_radio]';
-var zasilkovnaValue = "2";
-/* CONFIG PROPERTIES END */
+    /* CONFIG PROPERTIES BEGIN */
+    var inputName = 'payment[-::jIzui4tg::value]';
+    var hiddenFieldName = 'payment[-::jIzui4tg::name]';
+    var transportSelectorName = 'payment[items::1::key_radio]';
+    var zasilkovnaValue = "2";
+    /* CONFIG PROPERTIES END */
 
-var zasilkovnaInput = document.querySelector("input[name='" + inputName + "']");
-var zasilkovnaHidden = document.querySelector("input[name='" + hiddenFieldName + "']");
+    var zasilkovnaInput = document.querySelector("input[name='" + inputName + "']");
+    var zasilkovnaHidden = document.querySelector("input[name='" + hiddenFieldName + "']");
 
-var zasilkovnaParent = zasilkovnaInput.parentNode.parentNode;
+    var zasilkovnaParent = zasilkovnaInput.parentNode.parentNode;
 
-var selectZasilkovnaButton = document.createElement('button');
-selectZasilkovnaButton.textContent = 'Vybrat pobočku';
-selectZasilkovnaButton.setAttribute('class', 'packeta-selector-open');
-selectZasilkovnaButton.setAttribute('type', 'button');
+    var selectZasilkovnaButton = document.createElement('button');
+    selectZasilkovnaButton.textContent = 'Vybrat pobočku';
+    selectZasilkovnaButton.setAttribute('class', 'packeta-selector-open');
+    selectZasilkovnaButton.setAttribute('type', 'button');
 
-zasilkovnaInput.parentNode.insertBefore(selectZasilkovnaButton, zasilkovnaInput);
-zasilkovnaInput.setAttribute('class', 'packeta-selector-branch-name');
-zasilkovnaHidden.setAttribute('class', 'packeta-selector-branch-id');
+    zasilkovnaInput.parentNode.insertBefore(selectZasilkovnaButton, zasilkovnaInput);
+    zasilkovnaInput.setAttribute('class', 'packeta-selector-branch-name');
+    zasilkovnaHidden.setAttribute('class', 'packeta-selector-braFnch-id');
 
-zasilkovnaInput.setAttribute('readonly', 'readonly');
-zasilkovnaInput.parentNode.style.display = "flex";
+    zasilkovnaInput.setAttribute('readonly', 'readonly');
+    zasilkovnaInput.parentNode.style.display = "flex";
 
-console.log(document.querySelector("input[name='" + transportSelectorName + "']").value);
-var showHideZasilkovna = function (value) {
-   var state = value === zasilkovnaValue ? "block" : "none";
-   zasilkovnaParent.style.display = state;
+    console.log(document.querySelector("input[name='" + transportSelectorName + "']").value);
+    var showHideZasilkovna = function(value) {
+        var state = value === zasilkovnaValue ? "block" : "none";
+        zasilkovnaParent.style.display = state;
 
-   zasilkovnaInput.value = state === "block" ? "" : "N/A";
-}
+        zasilkovnaInput.value = state === "block" ? "" : "N/A";
+    }
 
-var transportSelectors = document.querySelectorAll("input[name='" + transportSelectorName + "']");
-var zasilkovnaSelected = false;
-for (var i = 0; i < transportSelectors.length; i++) {
-   transportSelectors[i].addEventListener('change', function () { showHideZasilkovna(this.value); });
-   if ((transportSelectors[i].value === zasilkovnaValue) && !transportSelectors[i].checked) {
-     zasilkovnaParent.style.display = "none";
-   }
-}
-
+    var transportSelectors = document.querySelectorAll("input[name='" + transportSelectorName + "']");
+    var zasilkovnaSelected = false;
+    for (var i = 0; i < transportSelectors.length; i++) {
+        transportSelectors[i].addEventListener('change', function() {
+            showHideZasilkovna(this.value);
+        });
+        if ((transportSelectors[i].value === zasilkovnaValue) && !transportSelectors[i].checked) {
+            zasilkovnaParent.style.display = "none";
+        }
+    }
 </script>
 
 <script>
-   var packetaSelectorOpen = '.packeta-selector-open';
-   var packetaSelectorBranchName = '.packeta-selector-branch-name';
-   var packetaSelectorBranchId = '.packeta-selector-branch-id';
-   var packetaCountry = 'cz';
-   var packetaWidgetLanguage = 'cs';
+    var packetaSelectorOpen = '.packeta-selector-open';
+    var packetaSelectorBranchName = '.packeta-selector-branch-name';
+    var packetaSelectorBranchId = '.packeta-selector-branch-id';
+    var packetaCountry = 'cz';
+    var packetaWidgetLanguage = 'cs';
 
-   var packetaPrimaryButtonColor = '#39b54a';
-   var packetaBackgroundColor = '#ffffff';
-   var packetaFontColor = '#555555';
-   var packetaFontFamily = 'Arial';
+    var packetaPrimaryButtonColor = '#39b54a';
+    var packetaBackgroundColor = '#ffffff';
+    var packetaFontColor = '#555555';
+    var packetaFontFamily = 'Arial';
 </script>
 
 <script src="https://widget.packeta.com/www/js/packetaWidget.js" data-api-key="YOURAPIKEY"></script>
