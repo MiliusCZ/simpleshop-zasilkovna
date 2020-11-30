@@ -13,11 +13,11 @@ Integrace výběru pobočky Zásilkovny do Simpleshop formuláře
 
 K produktu vytvořte položky doplňkového prodeje pro dopravu. Jedna z položek bude představovat dodání přes Zásilkovnu. 
 
-## Vytvoření políčka ve formuláři
+### Vytvoření políčka ve formuláři
 
 V záložce *Formulář* v úpravě produktu vytvořte nové pole typu *Jednořádkový text*. Název je libovolný - například **Výdejna zásilkovny**
 
-## Kód
+### Kód
 
 Kód integrace vložte v úpravě produktu do záložky *Ostatní*, *pole JS, CSS a jiné kódy*. Před vložením je třeba v kódu upravit několik položek.
 Hodnoty je třeba vyčíst ze zdrojového kódu stránky s formulářem (například pomocí pravého kliku na pole a vybrání položky *prozkoumat*)
@@ -89,3 +89,7 @@ for (var i = 0; i < transportSelectors.length; i++) {
 
 <script src="https://widget.packeta.com/www/js/packetaWidget.js" data-api-key="YOURAPIKEY"></script>
 ```
+
+## Závěrem
+
+Po uložení by měla integrace fungovat. Postup je třeba zopakovat pro každý produkt v Simpleshopu, který lze zasílat přes Zásilkovnu. Pokud potřebujete pomoc s nastavením, ozvěte se mi.
