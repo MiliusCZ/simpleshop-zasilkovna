@@ -19,7 +19,7 @@ K produktu vytvořte položky doplňkového prodeje pro dopravu. Jedna z polože
 
 ### Vytvoření políčka ve formuláři
 
-V záložce *Formulář* v úpravě produktu vytvořte nové pole typu *Jednořádkový text*. Název je libovolný - například **Výdejna zásilkovny**
+V záložce *Formulář* v úpravě produktu vytvořte nové pole typu *Jednořádkový text*. Název je libovolný - například **Výdejna zásilkovny**. Pole je potřeba označit jako povinné, aby zákazníci nemohli odeslat formulář bez vybrané výdejny.
 
 ![Vlastní pole formuláře](https://github.com/MiliusCZ/simpleshop-zasilkovna/blob/main/vlastn%C3%AD%20pole.png?raw=true)
 
