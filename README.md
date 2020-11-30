@@ -92,4 +92,4 @@ for (var i = 0; i < transportSelectors.length; i++) {
 
 ## Závěrem
 
-Po uložení by měla integrace fungovat. Postup je třeba zopakovat pro každý produkt v Simpleshopu, který lze zasílat přes Zásilkovnu. Pokud potřebujete pomoc s nastavením, ozvěte se mi.
+Po uložení by měla integrace fungovat. Postup je třeba zopakovat pro každý produkt v Simpleshopu, který lze zasílat přes Zásilkovnu. Pokud potřebujete pomoc s nastavením, ozvěte se mi (https://milosturek.cz).
