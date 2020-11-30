@@ -1,6 +1,8 @@
 # simpleshop-zasilkovna
 
-Integrace výběru pobočky Zásilkovny do Simpleshop formuláře
+Integrace výběru pobočky Zásilkovny do Simpleshop formuláře. Tato integrace přidá do formuláře pole s možností výběru výdejny zásilkovny.
+
+![Ukázka](https://github.com/MiliusCZ/simpleshop-zasilkovna/blob/main/ukazka.png?raw=true)
 
 ## Co je potřeba
 
@@ -18,6 +20,8 @@ K produktu vytvořte položky doplňkového prodeje pro dopravu. Jedna z polože
 ### Vytvoření políčka ve formuláři
 
 V záložce *Formulář* v úpravě produktu vytvořte nové pole typu *Jednořádkový text*. Název je libovolný - například **Výdejna zásilkovny**
+
+![Vlastní pole formuláře](https://github.com/MiliusCZ/simpleshop-zasilkovna/blob/main/vlastn%C3%AD%20pole.png?raw=true)
 
 ### Kód
 
