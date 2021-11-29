@@ -100,3 +100,4 @@ Nahraďte řetězec YOURAPIKEY v posledním řádku skriptu Vaším API klíčem
 ## Závěrem
 
 Po uložení by měla integrace fungovat. Postup je třeba zopakovat pro každý produkt v Simpleshopu, který lze zasílat přes Zásilkovnu. Pokud potřebujete pomoc s nastavením, ozvěte se mi (https://milosturek.cz).
+Skript umožňuje pouze výběr pobočky - zásilku v zásilkovně si stále musíte vytvořit ručně. Pokud jich máte více, Zásilkovna umožňuje hromadný import z CSV, a Simpleshop zase export objednávek do CSV. Před prvním importem je nutné si v Zásilkovně vytvořit šablonu pro import ze Simpleshopu.
