@@ -56,7 +56,7 @@ Nahraďte řetězec YOURAPIKEY v posledním řádku skriptu Vaším API klíčem
 
     zasilkovnaInput.parentNode.insertBefore(selectZasilkovnaButton, zasilkovnaInput);
     zasilkovnaInput.setAttribute('class', 'packeta-selector-branch-name');
-    zasilkovnaHidden.setAttribute('class', 'packeta-selector-braFnch-id');
+    zasilkovnaHidden.setAttribute('class', 'packeta-selector-branch-id');
 
     zasilkovnaInput.setAttribute('readonly', 'readonly');
     zasilkovnaInput.parentNode.style.display = "flex";
