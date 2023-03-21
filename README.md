@@ -41,7 +41,7 @@ Nahraďte řetězec YOURAPIKEY v posledním řádku skriptu Vaším API klíčem
     var inputName = 'payment[-::jIzui4tg::value]';
     var hiddenFieldName = 'payment[-::jIzui4tg::name]';
     var transportSelectorName = 'payment[items::1::key_radio]';
-    var zasilkovnaValue = "2";
+    var zasilkovnaValue = '2';
     /* CONFIG PROPERTIES END */
 
     var zasilkovnaInput = document.querySelector("input[name='" + inputName + "']");
@@ -59,14 +59,14 @@ Nahraďte řetězec YOURAPIKEY v posledním řádku skriptu Vaším API klíčem
     zasilkovnaHidden.setAttribute('class', 'packeta-selector-branch-id');
 
     zasilkovnaInput.setAttribute('readonly', 'readonly');
-    zasilkovnaInput.parentNode.style.display = "flex";
+    zasilkovnaInput.parentNode.style.display = 'flex';
 
     console.log(document.querySelector("input[name='" + transportSelectorName + "']").value);
     var showHideZasilkovna = function(value) {
-        var state = value === zasilkovnaValue ? "block" : "none";
+        var state = value === zasilkovnaValue ? 'block' : 'none';
         zasilkovnaParent.style.display = state;
 
-        zasilkovnaInput.value = state === "block" ? "" : "N/A";
+        zasilkovnaInput.value = state === 'block' ? '' : 'N/A';
     }
 
     var transportSelectors = document.querySelectorAll("input[name='" + transportSelectorName + "']");
@@ -76,7 +76,7 @@ Nahraďte řetězec YOURAPIKEY v posledním řádku skriptu Vaším API klíčem
             showHideZasilkovna(this.value);
         });
         if ((transportSelectors[i].value === zasilkovnaValue) && !transportSelectors[i].checked) {
-            zasilkovnaParent.style.display = "none";
+            zasilkovnaParent.style.display = 'none';
         }
     }
 </script>
