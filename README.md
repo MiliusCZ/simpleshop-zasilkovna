@@ -29,7 +29,7 @@ Kód integrace vložte v úpravě produktu do záložky *Ostatní*, *pole JS, CS
 Hodnoty je třeba vyčíst ze zdrojového kódu stránky s formulářem (například pomocí pravého kliku na pole a vybrání položky *prozkoumat*)
 
 - *inputName* - název input elementu pole **Adresa zásilkovny** 
-- *inputName* - název hidden input elementu pole **Adresa zásilkovny** 
+- *hiddenFieldName* - název hidden input elementu pole **Adresa zásilkovny** 
 - *transportSelectorName* - název atributu pro výběr doplňkového prodeje 
 - *zasilkovnaValue* - pořadí zásilkovny v seznamu doplňkového prodeje. Počítá se od nuly, takže například bude-li Zásilkovna na druhém místě, hodnota je "1"
 
